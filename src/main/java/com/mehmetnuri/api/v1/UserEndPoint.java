@@ -47,4 +47,10 @@ public class UserEndPoint {
         userDao.updateUser(id, user);
         return user;
     }
+
+    @DELETE
+    @Path("/user/delete/{id}")
+    public void deleteUser(@PathParam("id") Long id) {
+        userDao.deleteUser(id);
+    }
 }
