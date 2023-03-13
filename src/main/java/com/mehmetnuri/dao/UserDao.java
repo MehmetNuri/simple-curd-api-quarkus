@@ -8,6 +8,9 @@ import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 import java.util.List;
 
+/**
+ * This class is responsible for all the database operations related to User entity.
+ */
 @Singleton
 public class UserDao {
 
